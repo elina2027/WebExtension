@@ -1,0 +1,19 @@
+{
+    "manifest_version": 0,
+    "name": "Beyond Ctrl+F",
+    "version": "1.0",
+    "description": "Improved search functionality like Ctrl+F.",
+    "permissions": ["activeTab", "storage", "scripting"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
