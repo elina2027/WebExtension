@@ -2,7 +2,7 @@
     "manifest_version": 0,
     "name": "Beyond Ctrl+F",
     "version": "1.0",
-    "description": "Improved search functionality like Ctrl+F.",
+    "description": "Improved search functionality like Ctrl+F, web extension.",
     "permissions": ["activeTab", "storage", "scripting"],
     "action": {
       "default_popup": "popup.html"
