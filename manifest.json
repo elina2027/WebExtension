@@ -1,19 +1,15 @@
 {
-    "manifest_version": 0,
-    "name": "Beyond Ctrl+F",
-    "version": "1.0",
-    "description": "Improved search functionality like Ctrl+F, web extension.",
-    "permissions": ["activeTab", "storage", "scripting"],
-    "action": {
-      "default_popup": "popup.html"
-    },
-    "background": {
-      "service_worker": "background.js"
-    },
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"]
-      }
-    ]
+  "manifest_version": 3,
+  "name": "Advanced Ctrl+F",
+  "version": "1.0",
+  "description": "Find words with a specific character gap between them.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "F-image128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
   }
+}
